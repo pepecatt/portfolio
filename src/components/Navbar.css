@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --primary-colour: pink;
+}
+
+.navbar {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 10px 10px 10px 15px;
+  background: #fff;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.navbar a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 0 15px;
+  font-weight: 500;
+  transition: 0.2s ease-out;
+}
+
+.navbar a:hover{
+  color: var(--primary-colour);
+}
+
+strong {
+  font-weight: 600;
+  font-size: 25px;
+}

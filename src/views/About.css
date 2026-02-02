@@ -1,0 +1,206 @@
+:root{
+  --primary-colour: pink;
+  --max-width: 1200px;
+  --max-width-hero-right: 600px;
+  --max-width-skills: 1100px;
+  --section-margin-top: 60px;
+  --text-colour: black;
+}
+
+.main-page {
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+#hero p {
+  color: var(--text-colour);
+}
+
+/* --------- HERO SECTION ---------- */
+#hero {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 100px 100px;
+  display: grid;
+  grid-template-columns: 370px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* LEFT COLUMN */
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.portrait {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px 15px;
+  display: flex;
+  list-style: none;
+  margin-right: 10px;
+}
+
+#hero button {
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  transition: transform 0.7s ease-in-out;
+  opacity: 100%;
+}
+
+.resume-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 8px 16px;
+  border: 2px solid black;
+  border-radius: 20px;
+
+  text-decoration: none;
+  background: none;
+  
+  font-size: 20px;
+  transition: transform 0.7s ease-in-out;
+  opacity: 100%;
+}
+
+.resume {
+  width: 30px;
+  aspect-ratio: 1/1;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.linkedin, .github {
+  width: 50px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.email {
+  width: 60px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+#hero button:hover {
+  opacity: 80%;
+  transition: 0.3s ease;
+}
+
+/* RIGHT COLUMN */
+.hero-right {
+  max-width: var(--max-width-hero-right);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+.name1,
+.name2 {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-style: italic;
+  font-size: 75px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-align: left;
+}
+
+.name2 {
+  margin-top: 5px;
+  margin-bottom: 45px;
+  text-align: right;
+}
+
+.hero-right p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.about-me2, .about-me3 {
+  margin-top: 10px;
+}
+
+
+/* ---------------- SKILLS ----------------- */
+#skills {
+  max-width: var(--max-width-skills);
+  margin: 0px auto;
+  margin-top: var(--section-margin-top);
+  padding: 50px 40px
+}
+
+h1 {
+  font-size: 45px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 600;
+}
+
+#skills p {
+  margin: 20px 0px 20px 305px;
+  font-size: 20px;
+}
+
+#skills h2 {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+#skills li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.programming, .software, .frameworks-tools, .hardware-lab, .languages {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.programming-icons, .software-icons, .frameworks-tools-icons, .hardware-lab-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 15px;
+  align-items: center;
+}
+
+.hardware-lab-icons {
+  gap: 8px 0px;
+}
+
+.programming-icons img, .software-icons img, .frameworks-tools-icons img {
+  width: 40px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.programming-icons img:hover, .software-icons img:hover, .frameworks-tools-icons img:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}
+
+.learning {
+  background-color: rgb(255, 255, 202);
+}
+
+
