@@ -34,6 +34,7 @@
   padding: 0 15px;
   font-weight: 500;
   transition: 0.2s ease-out;
+  scroll-behavior: smooth;
 }
 
 .navbar a:hover{

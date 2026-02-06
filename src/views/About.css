@@ -1,11 +1,11 @@
-:root{
+:root {
   --primary-colour: pink;
   --max-width: 1200px;
   --max-width-hero-right: 600px;
   --max-width-skills: 1100px;
   --max-width-skills-col: 230px;
   --section-margin-top: 60px;
-  --max-width-project-card: 500px;
+  --max-width-featproject-card: 400px;
   --text-colour: black;
   --img-border-radius: 20px;
 }
@@ -76,7 +76,7 @@
 
   text-decoration: none;
   background: none;
-  
+
   font-size: 16px;
   transition: transform 0.7s ease-in-out;
   opacity: 100%;
@@ -89,7 +89,8 @@
   font-size: 20px;
 }
 
-.linkedin, .github {
+.linkedin,
+.github {
   width: 40px;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -111,7 +112,7 @@
   max-width: var(--max-width-hero-right);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap");
 .name1,
 .name2 {
   font-family: "Edu NSW ACT Cursive", cursive;
@@ -135,21 +136,21 @@ p {
   color: #333;
 }
 
-.about-me2, .about-me3 {
+.about-me2,
+.about-me3 {
   margin-top: 10px;
 }
-
 
 /* ---------------- SKILLS ----------------- */
 #skills {
   max-width: var(--max-width-skills);
   margin: 0px auto;
   margin-top: var(--section-margin-top);
-  padding: 50px 40px
+  padding: 50px 40px;
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 40px;
   letter-spacing: 2px;
   text-align: center;
   font-weight: 600;
@@ -175,66 +176,70 @@ h1 {
   margin-right: 10px;
 }
 
-.programming, .software, .frameworks-tools, .hardware-lab, .languages {
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.skills-div {
   display: grid;
   grid-template-columns: var(--max-width-skills-col) 1fr;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.programming-icons, .software-icons, .frameworks-tools-icons, .hardware-lab-icons {
+.skills-icons, .skills-hl {
   display: flex;
   flex-wrap: wrap;
   gap: 15px 10px;
   align-items: center;
 }
 
-.hardware-lab-icons {
-  gap: 5px 0px;
-}
-
-.programming-icons img, .software-icons img, .frameworks-tools-icons img {
+.skills-icons img {
   width: 30px;
   aspect-ratio: 1/1;
   object-fit: contain;
 }
 
-.programming-icons img:hover, .software-icons img:hover, .frameworks-tools-icons img:hover {
+.skills-hl {
+  gap: 5px 0px;
+}
+
+#skills li:hover {
   transform: translateY(-2px);
-  transition: 0.2s ease;
+  transition: 0.3s ease;
 }
 
 .learning {
   background-color: rgb(255, 255, 202);
 }
 
-
 /* ---------------- PROJECTS ----------------- */
 #projects {
-  max-width: var(--max-width);
+  max-width: calc(var(--max-width) + 100px);
   margin: 0px auto;
   margin-top: var(--section-margin-top);
-  padding: 80px 0px
+  padding: 80px 0px;
 }
 
 .projects-div {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px 40px;;
+  gap: 30px 20px;
 }
 
-.project-card {
+.featproject-card {
   display: flex;
   flex-direction: column;
-  max-width: var(--max-width-project-card);
+  max-width: var(--max-width-featproject-card);
   border: 1px solid black;
   background-color: rgb(244, 244, 244);
   border-radius: var(--img-border-radius);
   padding: 15px;
 }
 
-.project-card img {
+.featproject-card img {
   border-radius: var(--img-border-radius);
   margin: 0 auto;
   margin-bottom: 10px;
@@ -243,19 +248,24 @@ h1 {
   object-fit: cover;
 }
 
-h3 {
-  font-size: 18px;
-  font-weight: 500;
+.featproject-card p {
+  font-size: 15px;
+}
+
+.featproject-card p:not(.read-more) {
+  flex: 1;
 }
 
 .read-more {
-  text-align: right;
-  position: relative;
-  bottom: 0;
+  margin-top: auto;
+  font-size: 14px;
+  cursor: pointer;
   text-decoration: underline;
 }
 
-
+.featproject-card h3 {
+  font-size: 18px;
+}
 
 /* ------------ EXPERIENCE -------------*/
 #experience {
@@ -263,7 +273,7 @@ h3 {
   margin: 0px auto;
   margin-top: var(--section-margin-top);
   padding: 50px 40px;
-  margin-bottom: 500px;
+  margin-bottom: 200px;
 }
 
 .experience-cards-div {

@@ -64,9 +64,9 @@ function AboutView() {
         <section id="skills" href="skills">
           <h1>Skills</h1>
           <p>Highlighted are the skills I'm learning right now!</p>
-          <div className="programming">
+          <div className="skills-div">
             <h3>Programming</h3>
-            <ul className="programming-icons">
+            <ul className="skills-icons">
               <li>
                 <img src="src\icons\icons1\java-svgrepo-com.svg" />
                 Java
@@ -96,9 +96,9 @@ function AboutView() {
               </li>
             </ul>
           </div>
-          <div className="frameworks-tools">
+          <div className="skills-div">
             <h3>Frameworks & Tools</h3>
-            <ul className="frameworks-tools-icons">
+            <ul className="skills-icons">
               <li>
                 <img src="src\icons\icons2\react-svgrepo-com.svg" />
                 React
@@ -119,9 +119,9 @@ function AboutView() {
               </li>
             </ul>
           </div>
-          <div className="software">
+          <div className="skills-div">
             <h3>Software</h3>
-            <ul className="software-icons">
+            <ul className="skills-icons">
               <li>
                 <img src="src\icons\icons3\solidworks.svg"></img>SolidWorks
               </li>
@@ -172,9 +172,9 @@ function AboutView() {
               </li>
             </ul>
           </div>
-          <div className="hardware-lab">
+          <div className="skills-div">
             <h3>Hardware & Lab</h3>
-            <ul className="hardware-lab-icons">
+            <ul className="skills-hl">
               <li>PCBs, </li>
               <li>Microcontrollers: </li>
               <li>ATmega328P,</li>
@@ -184,9 +184,9 @@ function AboutView() {
               <li>Micropipetting </li>
             </ul>
           </div>
-          <div className="hardware-lab">
+          <div className="skills-div">
             <h3>Languages</h3>
-            <ul className="hardware-lab-icons">
+            <ul className="skills-hl">
               <li>English, </li>
               <li className="learning">French (B1), </li>
               <li>Chinese (Intermediate)</li>
@@ -197,8 +197,8 @@ function AboutView() {
         <section id="projects" href="projects">
           <h1>Featured Projects</h1>
           <div className="projects-div">
-            <div className="project-card">
-              <img src="src\images\proj-electrium\pcb.jpeg"></img>
+            <div className="featproject-card">
+              <img src="src\images\proj-electrium\mergedlights.jpg"></img>
               <h3>Electric Skateboard Tail Light System</h3>
               <p>
                 Designed and implemented the tail light system using the
@@ -208,27 +208,18 @@ function AboutView() {
               </p>
               <p className="read-more"> Schematics and more →</p>
             </div>
-            <div className="project-card">
+            <div className="featproject-card">
               <img src="src\images\proj-electrium\pcb.jpeg"></img>
               <h3>This Website</h3>
               <p>
-                A self-coded portfolio to showcase my skills and projects. A fun
+                A self-coded portfolio website to showcase my skills and projects. A fun
                 passion project!
               </p>
-              <p className="read-more">GitHub link</p>
+              <p className="read-more">GitHub link →</p>
             </div>
-            <div className="project-card">
+            <div className="featproject-card">
               <img src="src\images\proj-electrium\pcb.jpeg"></img>
-              <h3>Triboelectric Nanogenerator</h3>
-              <p>
-                Designed and modeled a TENG device to convert wind energy into
-                electricity.
-              </p>
-              <p className="read-more">Read more →</p>
-            </div>
-            <div className="project-card">
-              <img src="src\images\proj-electrium\pcb.jpeg"></img>
-              <h3>(In Progress) Aircraft Embedded Flight Software</h3>
+              <h3>(Current) Aircraft Embedded Flight Software</h3>
               <p>
                 Program the team’s custom autopilot, ZeroPilot, and verify
                 flight control functionality using C, C++, and STM32-based
