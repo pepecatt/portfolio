@@ -164,7 +164,7 @@ function ProjectsView() {
                 Settings view - where selected genres can be changed
                 <img src={assets.imdb.settingsView} />
               </li>
-              <a href="#top" onClick={() => setShowFilmWeb((prev) => !prev)}>
+              <a href="#filmweb" onClick={() => setShowFilmWeb((prev) => !prev)}>
                 Hide ↑
               </a>
             </div>

@@ -251,7 +251,7 @@ function AboutView() {
               </a>
             </div>
           </div>
-          <a className="seeallprojects-btn">See All Projects</a>
+          <a href="/projects" className="seeallprojects-btn">See All Projects</a>
         </section>
 
         <section id="experience">

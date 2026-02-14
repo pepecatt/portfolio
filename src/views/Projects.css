@@ -116,7 +116,6 @@
 #showmore li.pcb12 {
   display: flex;
   flex-direction: row;
-  margin-bottom: 0px;
 }
 
 #showmore li.pcb12 img {
@@ -126,4 +125,72 @@
 
 .project-card .bulleted-list {
   margin-left: 15px;
+}
+
+
+
+@media (max-width: 1024px) {
+
+  .projects-list {
+    max-width: 95%;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr 320px;
+    gap: 30px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .projects-h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .projects-list {
+    max-width: 100%;
+    padding: 0 15px 120px 15px;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .project-card img {
+    order: -1; /* image appears on top */
+  }
+
+  .project-card h3 {
+    font-size: 20px;
+  }
+
+  .project-content {
+    gap: 8px;
+  }
+
+  .project-links {
+    margin-top: 15px;
+  }
+
+  .project-skills {
+    gap: 8px;
+  }
+
+  .project-skills li {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+
+  #showmore li.pcb12 {
+    flex-direction: column;
+  }
+
+  #showmore li.pcb12 img {
+    width: 100%;
+  }
+
 }
