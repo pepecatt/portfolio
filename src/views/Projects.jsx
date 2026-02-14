@@ -241,7 +241,7 @@ function ProjectsView() {
             </div>
 
             <div className="project-links">
-              <a href="https://github.com/pepecatt/Portfolio" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/pepecatt/portfolio" target="_blank" rel="noopener noreferrer">
                 Github link
               </a>
             </div>

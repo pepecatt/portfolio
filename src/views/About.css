@@ -386,3 +386,143 @@ h2 {
   text-align: center;
   font-size: 14px;
 }
+
+@media (max-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+  }
+
+  .name1,
+  .name2 {
+    font-size: 60px;
+  }
+
+  .skills-div {
+    grid-template-columns: 200px 1fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+  /* HERO */
+  #hero {
+    padding: 120px 0px 80px 0px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .hero-left {
+    align-items: center;
+  }
+
+  .portrait {
+    max-width: 280px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .hero-right {
+    max-width: 100%;
+  }
+
+  .name1,
+  .name2 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .name2 {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  p {
+    font-size: 15px;
+    padding: 0px 20px;
+  }
+  #hero p {
+    text-align: center;
+  }
+
+
+  /* SKILLS */
+  #skills {
+    padding: 80px 0;
+  }
+
+  #skills p {
+    padding: 0 20px 20px 20px;
+    text-align: center;
+  }
+
+  .skills-div {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    gap: 15px;
+  }
+
+  .skills-div h3 {
+    text-align: center;
+  }
+
+  .skills-icons,
+  .skills-hl {
+    justify-content: center;
+  }
+
+  #skills li {
+    font-size: 16px;
+  }
+
+  .skills-icons img {
+    width: 24px;
+  }
+
+
+  /* PROJECTS */
+  #projects {
+    padding: 80px 20px;
+  }
+
+  .projects-div {
+    gap: 20px;
+  }
+
+  .featproject-card {
+    max-width: 100%;
+  }
+
+  .featproject-card h3 {
+    font-size: 17px;
+  }
+
+
+  /* EXPERIENCE */
+  #experience {
+    padding: 80px 20px;
+  }
+
+  .experience-cards-div {
+    padding: 0;
+  }
+
+  .experience-text {
+    padding-right: 0;
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+
+}
+
+
