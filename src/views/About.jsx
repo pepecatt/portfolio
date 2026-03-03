@@ -5,7 +5,9 @@ import { assets } from "../assets";
 function AboutView() {
   return (
     <>
-      <Navbar />
+      <div className="bar">
+        <Navbar />
+      </div>
       <div className="main-page">
         <section id="hero" className="hero">
           <div className="hero-container">
