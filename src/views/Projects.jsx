@@ -53,7 +53,7 @@ function ProjectsView() {
 
               <div className="project-links">
                 {!showSchematics && (
-                  <a onClick={() => setShowSchematics((prev) => !prev)}>
+                  <a id="filmweb" onClick={() => setShowSchematics((prev) => !prev)}>
                     Schematics and process ↓
                   </a>
                 )}
@@ -102,7 +102,7 @@ function ProjectsView() {
           <div className="project-card">
             <div className="project-card-text">
               <div className="project-content">
-                <h3 id="filmweb">Film Database Web Application </h3>
+                <h3>Film Database Web Application </h3>
                 <p>
                   Displays movie data using the IMDb API, replicating core
                   functionality of a streaming service interface, integrated
