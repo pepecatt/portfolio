@@ -79,12 +79,12 @@ function AboutView() {
             <h3>Programming</h3>
             <ul className="skills-icons">
               <li>
-                <img src={assets.skills.javaIcon} alt="Java" />
-                Java
-              </li>
-              <li>
                 <img src={assets.skills.pythonIcon} alt="Python" />
                 Python
+              </li>
+              <li>
+                <img src={assets.skills.javaIcon} alt="Java" />
+                Java
               </li>
               <li className="learning">
                 <img src={assets.skills.cIcon} alt="C" />C
@@ -193,10 +193,7 @@ function AboutView() {
             <h3>Hardware & Lab</h3>
             <ul className="skills-hl">
               <li>PCBs, </li>
-              <li>Microcontrollers: </li>
-              <li>ATmega328P,</li>
-              <li className="learning">Raspberry Pi, </li>
-              <li className="learning">ESP32, </li>
+              <li>Microcontrollers: ATmega328P,</li>
               <li>Soldering, </li>
               <li>3D Printing, </li>
               <li>Breadboarding, </li>
@@ -242,16 +239,7 @@ function AboutView() {
                 Read more →
               </a>
             </div>
-            <div className="featproject-card">
-              <h3>(Current) Aircraft Embedded Flight Software</h3>
-              <p>
-                Developing a hardware-in-the-loop (HIL) simulator to test flight
-                controller behavior using simulated sensor input. Implementing
-                UART communication between a Raspberry Pi and an ESP32 to
-                transmit the data. Using C and C++ with Quarc (MATLAB/Simulink)
-                software.
-              </p>
-            </div>
+
           </div>
           <a href="/projects" className="seeallprojects-btn">
             See All Projects

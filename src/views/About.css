@@ -10,7 +10,7 @@
   --text-primary: #1F1F1F;
   --accent: #4C5C75;
   --accent-light: #cfdcd4;
-  --border-color: #E3DED6;
+  --border-color: #dad7d2;
 }
 
 .main-page {
@@ -245,13 +245,13 @@ h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px 7px;
+  gap: 30px 30px;
 }
 
 .featproject-card {
   display: flex;
   flex-direction: column;
-  max-width: 360px;
+  max-width: 400px;
   background: #FFFFFF;
   border: 1px solid var(--border-color);
   border-radius: var(--img-border-radius);
@@ -280,7 +280,7 @@ h3 {
 }
 
 .read-more {
-  margin-top: auto;
+  margin-top: 10px;
   font-size: 15px;
   cursor: pointer;
   text-decoration: none;
