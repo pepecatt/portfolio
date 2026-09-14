@@ -12,13 +12,14 @@ function ProjectsView() {
       <div className="bar">
         <Navbar />
       </div>
-      <div className="projects-page">
+
+      <main className="projects-page">
         <h1 id="top" className="projects-h1">
           Projects
         </h1>
 
         <div className="projects-list">
-          <div className="project-card">
+          <section className="project-card">
             <div className="project-card-text">
               <div className="project-content">
                 <h3>Electric Skateboard Tail Light System</h3>
@@ -97,9 +98,9 @@ function ProjectsView() {
                 </a>
               </div>
             )}
-          </div>
+          </section>
 
-          <div className="project-card">
+          <section className="project-card">
             <div className="project-card-text">
               <div className="project-content">
                 <h3>Film Database Web Application </h3>
@@ -194,9 +195,9 @@ function ProjectsView() {
                 </a>
               </div>
             )}
-          </div>
+          </section>
 
-          <div className="project-card">
+          <section className="project-card">
             <div className="project-card-text">
               <div className="project-content">
                 <h3>Embedded Motor Control System </h3>
@@ -219,17 +220,13 @@ function ProjectsView() {
                   <li className="learning">
                     <img src={assets.skills.cIcon} />C
                   </li>
-                  <li className="learning">
-                    <img src={assets.skills.cppIcon} />
-                    C++
-                  </li>
                 </ul>
               </div>
             </div>
             <img src={assets.projects.stm32Img}></img>
-          </div>
+          </section>
 
-          <div className="project-card">
+          <section className="project-card">
             <div className="project-card-text">
               <div className="project-content">
                 <h3>This Website</h3>
@@ -268,9 +265,9 @@ function ProjectsView() {
               </div>
             </div>
             <img src={assets.projects.websiteImg}></img>
-          </div>
+          </section>
 
-          <div className="project-card">
+          <section className="project-card">
             <div className="project-card-text">
               <div className="project-content">
                 <h3>Streamlit Web Application </h3>
@@ -305,9 +302,9 @@ function ProjectsView() {
               </div>
             </div>
             <img src={assets.projects.streamlitImg}></img>
-          </div>
+          </section>
 
-          <div className="project-card">
+          <section className="project-card">
             <div className="project-card-text">
               <div className="project-content">
                 <h3>Various SolidWorks Projects </h3>
@@ -333,9 +330,9 @@ function ProjectsView() {
                 <img src={assets.solidworks.solidworks3b} />
               </li>
             </div>
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
 
       <footer className="footer">
         <p>© 2026 Catherine Huang · Built with React</p>

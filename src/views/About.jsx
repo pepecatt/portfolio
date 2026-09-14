@@ -65,8 +65,8 @@ function AboutView() {
                 personal projects (such as this website!)
               </p>
               <p className="about-me3">
-                In my free time, I like listening to music, reading fantasy
-                novels, and drinking matcha!
+                In my free time, I like listening to music, reading fiction
+                novels, and drinking bubble tea!
               </p>
             </div>
           </div>
@@ -92,6 +92,10 @@ function AboutView() {
               <li className="learning">
                 <img src={assets.skills.cppIcon} alt="C++" />
                 C++
+              </li>
+              <li className="learning">
+                <img src={assets.skills.RIcon} alt="R" />
+                R
               </li>
               <li>
                 <img src={assets.skills.htmlIcon} alt="HTML" />

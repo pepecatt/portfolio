@@ -31,9 +31,10 @@
   gap: 40px;
   padding: 30px;
 
-  border: 1px solid #ffffff;
+  border: 1px solid var(--border-color);
   background-color: white;
   border-radius: var(--img-border-radius);
+  box-shadow: 0 16px 45px rgba(48, 42, 35, 0.07);
 
   transition: 0.2s ease;
 }
@@ -71,6 +72,8 @@
   align-items: flex-start;
   gap: 10px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .project-card h3 {

@@ -14,6 +14,7 @@ import cppIcon from "./icons/icons1/C++_Logo.svg";
 import htmlIcon from "./icons/icons1/html-5-svgrepo-com.svg";
 import cssIcon from "./icons/icons1/css-3-svgrepo-com.svg";
 import jsIcon from "./icons/icons1/javascript-svgrepo-com.svg";
+import RIcon from "./icons/icons1/R_logo.svg.webp"
 
 import reactIcon from "./icons/icons2/react-svgrepo-com.svg";
 import numpyIcon from "./icons/icons2/numpy-svgrepo-com.svg";
@@ -36,7 +37,8 @@ import afterEffectsIcon from "./icons/icons3/adobe-after-effects-svgrepo-com.svg
 import capcutIcon from "./icons/icons3/capcut-svgrepo-com.svg";
 
 /* Experience Images */
-import dearDaisieLogo from "./images/Dear Daisie logo.png";
+import dearDaisieLogo from "./images/experience/Dear Daisie logo.png";
+import visualization from "./images/experience/visualization.png";
 
 /* ===============================
    Electrium Project
@@ -85,7 +87,6 @@ export const assets = {
     linkedinIcon,
     githubIcon,
     emailIcon,
-    dearDaisieLogo,
   },
 
   skills: {
@@ -96,6 +97,7 @@ export const assets = {
     htmlIcon,
     cssIcon,
     jsIcon,
+    RIcon,
     reactIcon,
     numpyIcon,
     pandasIcon,
@@ -151,6 +153,11 @@ export const assets = {
     streamlitImg,
   },
 
+  experience: {
+    dearDaisieLogo,
+    visualization,
+  },
+
   icons: {
     kicadIcon,
     pythonIcon,
@@ -160,6 +167,7 @@ export const assets = {
     htmlIcon,
     cssIcon,
     jsIcon,
+    RIcon,
     numpyIcon,
     pandasIcon,
     cIcon,
