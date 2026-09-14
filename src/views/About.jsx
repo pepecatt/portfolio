@@ -94,8 +94,7 @@ function AboutView() {
                 C++
               </li>
               <li className="learning">
-                <img src={assets.skills.RIcon} alt="R" />
-                R
+                <img src={assets.skills.RIcon} alt="R" />R
               </li>
               <li>
                 <img src={assets.skills.htmlIcon} alt="HTML" />
@@ -214,110 +213,187 @@ function AboutView() {
           </div>
         </section>
 
-        <section id="projects">
-          <h1>Featured Projects</h1>
-          <div className="projects-div">
-            <div className="featproject-card">
-              <img src={assets.electrium.pcb3DView}></img>
-              <h3>Electric Skateboard Tail Light System</h3>
-              <p>
-                Designed and implemented the tail light system using the
-                ATmega328P microcontroller, designed PCB in KiCad, soldered SMD
-                components, verified functionality using a multimeter and
-                oscilloscope.
-              </p>
-              <a className="read-more" href="/projects">
-                {" "}
-                Schematics and more →
-              </a>
-            </div>
-            <div className="featproject-card">
-              <img src={assets.imdb.imdbWeb}></img>
-              <h3>Film Database Web Application</h3>
-              <p>
-                Displays movie data using the IMDb API, replicating core
-                functionality of a streaming service interface, integrated
-                Firebase Authentication
-              </p>
-              <a className="read-more" href="/projects/#filmweb">
-                Read more →
-              </a>
-            </div>
+        <section id="about-experience">
+          <h1>Experience</h1>
 
+          <div className="experience-cards-div">
+            {/* DATA ANALYST */}
+            <article className="experience-card">
+              <div className="experience-sidebar">
+                <p className="experience-type">Research Experience</p>
+
+                <h2>Data Analyst</h2>
+
+                <div className="experience-workplace">
+                  <h3>Yip Lab</h3>
+                  <p>Donnelly Centre for Cellular and Biomolecular Research</p>
+                  <p>University of Toronto</p>
+                </div>
+
+                <div className="experience-meta">
+                  <p>May – August 2026</p>
+                  <p>Toronto, ON</p>
+                </div>
+              </div>
+
+              <div className="experience-content">
+                <p className="experience-summary">
+                  Developed an interactive Python tool that enabled a team of
+                  six postgraduate researchers to analyze and visualize
+                  time-resolved fluorescence microscopy data
+                </p>
+
+                <ul className="experience-points">
+                  <li>
+                    Developed an interactive Python and Napari tool to visualize
+                    fluorescence microscopy data, molecular trajectories, and
+                    anisotropy changes over time
+                  </li>
+
+                  <li>
+                    Built a NumPy and Pandas data-processing pipeline to parse
+                    ImageJ TrackMate XML outputs and quantify particle
+                    displacement, speed, direction, trajectory duration, and
+                    frame-by-frame motion
+                  </li>
+
+                  <li>
+                    Implemented trajectory classification and interactive
+                    visualization features, including vector fields, particle
+                    paths, anisotropy profiles, and per-track statistics, to
+                    help researchers examine particle behaviour and movement
+                    patterns
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            {/* DEAR DAISIE */}
+            <article className="experience-card">
+              <div className="experience-sidebar">
+                <p className="experience-type">Entrepreneurship</p>
+
+                <h2>Co-Founder</h2>
+
+                <img
+                  className="deardaisie-logo"
+                  src={assets.experience.dearDaisieLogo}
+                  alt="Dear Daisie"
+                />
+
+                <div className="experience-meta">
+                  <p>December 2025 – Present</p>
+                  <p>Remote</p>
+                </div>
+              </div>
+
+              <div className="experience-content">
+                <p className="experience-summary">
+                  Co-founded a meaningful gift brand, Dear Daisie, selling 20+
+                  plush flower bouquets accompanied by original narratives
+                  inspired by each flower's symbolism
+                </p>
+
+                <ul className="experience-points">
+                  <li>
+                    Designed the brand’s website using Lovable and integrated
+                    Shopify to support online product sales.
+                  </li>
+
+                  <li>
+                    Managed social media marketing and coordinated with a
+                    manufacturer to transform conceptual designs into finished
+                    products.
+                  </li>
+                </ul>
+
+                <a
+                  className="experience-link"
+                  href="https://www.deardaisie.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit deardaisie.com →
+                </a>
+              </div>
+            </article>
           </div>
-          <a href="/projects" className="seeallprojects-btn">
-            See All Projects
+
+          <a className="seemore-btn" href="/experience">
+            See photos →
           </a>
         </section>
 
-        <section id="experience">
-          <h1>Experience</h1>
-          <div className="experience-cards-div">
-            <div className="experience-card">
-              <div className="experience-text">
-                <h2>
-                  <img
-                    className="deardaisie-logo"
-                    src={assets.about.dearDaisieLogo}
-                  ></img>
-                </h2>
-                <p className="experience-info">
-                  December 2025 - Present &nbsp;|&nbsp; Remote
-                </p>
-                <ul>
-                  <p>
-                    Co-founded with my sister, Dear Daisie is a gift brand
-                    offering plush flower bouquets, each holding their own
-                    meaning and symbolic narrative.
-                  </p>
-                  <li>
-                    Built a Shopify e-commerce website with custom CSS and
-                    managed social media marketing
-                  </li>
-                  <li>
-                    Coordinated with manufacturer to translate conceptual
-                    designs into finished products
-                  </li>
-                  <a
-                    href="https://www.deardaisie.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    deardaisie.com
-                  </a>
-                </ul>
-              </div>
-            </div>
-            <div className="experience-card">
-              <div className="experience-text">
-                <h2>Music Camp Counsellor</h2>
-                <p className="experience-info">
-                  October 2023, October 2024 &nbsp;|&nbsp; Schomberg, ON
-                </p>
-                <ul>
-                  <li>
-                    Served as a senior counsellor for two annual music retreats
-                    supporting 80+ junior students, providing leadership,
-                    mentorship, and day-to-day supervision
-                  </li>
-                  <li>
-                    Facilitated daily small-group rehearsals (6–10 students),
-                    offering individualized feedback in orchestral score reading
-                    and string technique while adapting instruction to varied
-                    skill levels
-                  </li>
-                  <li>
-                    Collaborated with 2–5 peer leaders to plan and execute
-                    large-scale team-building activities for 80+ students,
-                    strengthening coordination, engagement, and peer
-                    collaboration
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <section id="projects">
+          <div className="section-heading">
+            <h1>Featured Projects</h1>
           </div>
+
+          <div className="projects-div">
+            <article className="featproject-card">
+              <div className="project-image-container">
+                <img
+                  src={assets.electrium.pcb3DView}
+                  alt="Electric skateboard tail light PCB"
+                />
+
+              </div>
+
+              <div className="featproject-content">
+                <h2>Electric Skateboard Tail Light System</h2>
+
+                <p className="project-description">
+                  Designed an automatic braking indicator using an ATmega328P
+                  microcontroller and accelerometer, including a custom PCB
+                  designed in KiCad and assembled using SMD soldering.
+                </p>
+
+                <div className="project-footer">
+                  <p>ATmega328P · KiCad · PCB Design</p>
+
+                  <a className="read-more" href="/projects">
+                    View schematics →
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article className="featproject-card">
+              <div className="project-image-container">
+                <img
+                  src={assets.imdb.imdbWeb}
+                  alt="Film database web application"
+                />
+
+              </div>
+
+              <div className="featproject-content">
+                <h2>Film Database Web Application</h2>
+
+                <p className="project-description">
+                  Developed a streaming-inspired web application that retrieves
+                  movie information from an IMDb API and uses Firebase
+                  Authentication to support personalized user accounts.
+                </p>
+
+                <div className="project-footer">
+                  <p>React · JavaScript · Firebase</p>
+
+                  <a className="read-more" href="/projects/#filmweb">
+                    View project →
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <a className="seemore-btn" href="/projects">
+            See all projects →
+          </a>
         </section>
       </div>
+
+
       <footer className="footer">
         <p>© 2026 Catherine Huang · Built with React</p>
       </footer>

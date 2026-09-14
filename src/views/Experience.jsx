@@ -44,13 +44,13 @@ function ExperienceView() {
                   <span>01</span>
                   Developed an interactive Python and Napari tool to visualize 
                   fluorescence microscopy data, molecular trajectories, and anisotropy 
-                  changes over time.
+                  changes over time
                 </li>
                 <li>
                   <span>02</span>
                   Built a NumPy and Pandas data-processing pipeline to parse ImageJ 
                   TrackMate XML outputs and quantify particle displacement, speed, 
-                  direction, trajectory duration, and frame-by-frame motion.
+                  direction, trajectory duration, and frame-by-frame motion
                 </li>
                 <li>
                   <span>03</span>
